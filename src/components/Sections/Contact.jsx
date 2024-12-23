@@ -41,8 +41,8 @@ export default function Contact() {
               
               </div>
               <div style={{ width: "50%" }}>
-                <div style={{ marginTop: "150px" }}>
-                <img src={ContactImg2} alt="office" className="radius6" style={{height:"400px"}} />
+                <div style={{ marginTop: "150px",backgroundColor:"green" }}>
+                <img src={ContactImg2} alt="office" className="radius6 " style={{height:"300px", maxWidth:"100%",}} />
                 </div>
               </div>
             </div>

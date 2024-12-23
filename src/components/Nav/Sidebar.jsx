@@ -103,11 +103,15 @@ const Wrapper = styled.nav`
   height: 100vh;
   position: fixed;
   top: 0;
-  padding: 0 30px;
-  right: ${(props) => (props.sidebarOpen ? "0px" : "-400px")};
+  right: ${(props) => (props.sidebarOpen ? "0" : "-400px")};
   z-index: 9999;
+  overflow: hidden; 
+  transition: right 0.3s ease-in-out;
+ 
+
   @media (max-width: 400px) {
     width: 100%;
+    right: ${(props) => (props.sidebarOpen ? "0" : "-100%")};
   }
 `;
 const SidebarHeader = styled.div`
